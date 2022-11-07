@@ -16,9 +16,79 @@
             <article>
                 <p>Hola soy un articulo dentro de una seccion, que va del lado izquierdo de la web</p>
             </article>
+            <article>
+                <p>Imagen utilizando etiquetas multimedias:</p>
+                <img src="https://www.stopcambioclimatico.es/wp-content/uploads/2019/06/scc-2.jpg" alt="Ropa de diversos colores colgadas de un perchero"/>
+                <p>Video utilizando iframe</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kR_Mlupsjr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+            <article>
+                <p>Tipos de pantalones que ofrecemos:</p>
+                <dl>
+                    <dt>Pantalones con pinzas</dt>
+                    <dd>¡Un clásico de los años cuarenta! Las pinzas son frunces que se crean al frente de las piernas.</dd>
+                    <dt>Pantalones pintillo o Skinny</dt>
+                    <dd>los pantalones skinny conquistaron a las masas en 2015 cuando cobraron mayor protagonismo siluetas relajadas más ceñidas al cuerpo.</dd>
+                    <dt>Pantalones Rectos</dt>
+                    <dd>Son ideales para estilizar, tanto la longitud de las piernas, como el ancho.</dd>
+                </dl>
+                <p>Las remeras que disponemos son:</p>
+                <ol>
+                    <li>Remera manga corta</li>
+                    <li>Remera manga larga</li>
+                    <li>Remera sin mangas</li>
+                    <li>Remera con tirantes</li>
+                    <li>Remeras con manga ranglan</li>
+                </ol>
+                <p>Ademas disponemos de distintas camperas:</p>
+                <ul>
+                    <li>Camperas bomber</li>
+                    <li>Camperas de jean</li>
+                    <li>Camperas de cuero y simil cuero</li>
+                    <li>Camperas de nylon e impermeables</li>
+                    <li>Camperas infladas</li>
+                    <li>Chaquetillas</li>
+                    <li>Parkas</li>
+                </ul>
+            </article>
+            <article>
+                <form action="PHP" method="post" enctype="text/plain">
+                    <fieldset>
+                        <legend>Formulario de contacto</legend>
+                        <label for="Nombre">Nombre:</label>
+                        <input TYPE="text" name="Nombre" placeholder="Juan">
+                        <br>
+                        <label for="Apellido">Apellido:</label>
+                        <input TYPE="text" name="Apellido" placeholder="Perez">
+                        <br>
+                        <label for="Correo">E-mail:</label>
+                        <input TYPE="email" name="Correo" placeholder="Juan@Perez.com">
+                        <br>
+                        <label for="Telefono">Telefono:</label>
+                        <input TYPE="number" name="Telefono" placeholder="+5401170196456">
+                        <br>
+                        <label for="Consulta">Escriba su consulta:</label>
+                        <textarea name="Consulta" cols="40" rows="20"></textarea>
+                        <br>
+                        <label for="Horarios">Horarios de contacto:</label>
+                        <select name="Horarios">
+                            <option value="Mañana">8:00hs a 13:00hs</option>
+                            <option value="Tarde">15:00hs a 19:00hs</option>
+                        </select>
+                        <br>
+                        <label for="acepta">Desea que lo contactemos por telefono:</label>
+                        <input type="checkbox" name="acepta" value="1">
+                        <br>
+                        <input TYPE="submit" value="Enviar formulario">
+                        <input TYPE="reset" value="Resetear formulario" placeholder>
+                    </fieldset>
+                </form>
+
+            </article>
         </section>
         <aside>
             <p>Hola soy un aside voy del lado derecho de la web</p>
+
         </aside>
         <footer>
             <p>Hola soy un footer</p>
