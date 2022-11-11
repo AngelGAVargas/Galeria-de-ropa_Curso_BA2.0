@@ -7,24 +7,28 @@
     </head>
     <body>
         <header>
-            <h1>Ruby Style</h1>
-            <p>Indumentaria unisex</p>
+            <div>
+                <h1>Ruby Style</h1>
+                <p>Indumentaria unisex</p>
+            </div>
         </header>
         <nav>
-            <ul>
-                <li>
-                    <a href="#">Inicio</a>
-                </li>
-                <li>
-                    <a href="#">Damas</a>
-                </li>
-                <li>
-                    <a href="#">Hombres</a>
-                </li>
-                <li>
-                    <a href="#">Contatos</a>
-                </li>
-            </ul>
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#">Damas</a>
+                    </li>
+                    <li>
+                        <a href="#">Hombres</a>
+                    </li>
+                    <li>
+                        <a href="#">Contatos</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <section>
             <article>
@@ -48,73 +52,79 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/kR_Mlupsjr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </article>
             <article>
-                <p>Tipos de pantalones que ofrecemos:</p>
-                <dl>
-                    <dt>Pantalones con pinzas</dt>
-                    <dd>¡Un clásico de los años cuarenta! Las pinzas son frunces que se crean al frente de las piernas.</dd>
-                    <dt>Pantalones pintillo o Skinny</dt>
-                    <dd>los pantalones skinny conquistaron a las masas en 2015 cuando cobraron mayor protagonismo siluetas relajadas más ceñidas al cuerpo.</dd>
-                    <dt>Pantalones Rectos</dt>
-                    <dd>Son ideales para estilizar, tanto la longitud de las piernas, como el ancho.</dd>
-                </dl>
-                <p>Las remeras que disponemos son:</p>
-                <ol>
-                    <li>Remera manga corta</li>
-                    <li>Remera manga larga</li>
-                    <li>Remera sin mangas</li>
-                    <li>Remera con tirantes</li>
-                    <li>Remeras con manga ranglan</li>
-                </ol>
-                <p>Ademas disponemos de distintas camperas:</p>
-                <ul>
-                    <li>Camperas bomber</li>
-                    <li>Camperas de jean</li>
-                    <li>Camperas de cuero y simil cuero</li>
-                    <li>Camperas de nylon e impermeables</li>
-                    <li>Camperas infladas</li>
-                    <li>Chaquetillas</li>
-                    <li>Parkas</li>
-                </ul>
+                <div>
+                    <p>Tipos de pantalones que ofrecemos:</p>
+                    <dl>
+                        <dt>Pantalones con pinzas</dt>
+                        <dd>¡Un clásico de los años cuarenta! Las pinzas son frunces que se crean al frente de las piernas.</dd>
+                        <dt>Pantalones pintillo o Skinny</dt>
+                        <dd>los pantalones skinny conquistaron a las masas en 2015 cuando cobraron mayor protagonismo siluetas relajadas más ceñidas al cuerpo.</dd>
+                        <dt>Pantalones Rectos</dt>
+                        <dd>Son ideales para estilizar, tanto la longitud de las piernas, como el ancho.</dd>
+                    </dl>
+                </div>
+                <div>
+                    <p>Las remeras que disponemos son:</p>
+                    <ol>
+                        <li>Remera manga corta</li>
+                        <li>Remera manga larga</li>
+                        <li>Remera sin mangas</li>
+                        <li>Remera con tirantes</li>
+                        <li>Remeras con manga ranglan</li>
+                    </ol>
+                </div>
+                <div>
+                    <p>Ademas disponemos de distintas camperas:</p>
+                    <ul>
+                        <li>Camperas bomber</li>
+                        <li>Camperas de jean</li>
+                        <li>Camperas de cuero y simil cuero</li>
+                        <li>Camperas de nylon e impermeables</li>
+                        <li>Camperas infladas</li>
+                        <li>Chaquetillas</li>
+                        <li>Parkas</li>
+                    </ul>
+                </div>  
             </article>
             <article>
-                <form action="PHP" method="post" enctype="text/plain">
-                    <fieldset>
-                        <legend>Formulario de contacto</legend>
-                        <label for="Nombre">Nombre:</label>
-                        <input TYPE="text" name="Nombre" placeholder="Juan">
-                        <br>
-                        <label for="Apellido">Apellido:</label>
-                        <input TYPE="text" name="Apellido" placeholder="Perez">
-                        <br>
-                        <label for="Correo">E-mail:</label>
-                        <input TYPE="email" name="Correo" placeholder="Juan@Perez.com">
-                        <br>
-                        <label for="Telefono">Telefono:</label>
-                        <input TYPE="number" name="Telefono" placeholder="+5401170196456">
-                        <br>
-                        <label for="Consulta">Escriba su consulta:</label>
-                        <textarea name="Consulta" cols="40" rows="20"></textarea>
-                        <br>
-                        <label for="Horarios">Horarios de contacto:</label>
-                        <select name="Horarios">
-                            <option value="Mañana">8:00hs a 13:00hs</option>
-                            <option value="Tarde">15:00hs a 19:00hs</option>
-                        </select>
-                        <br>
-                        <label for="acepta">Desea que lo contactemos por telefono:</label>
-                        <input type="checkbox" name="acepta" value="1">
-                        <br>
-                        <input TYPE="submit" value="Enviar formulario">
-                        <input TYPE="reset" value="Resetear formulario" placeholder>
-                    </fieldset>
-                </form>
-
+                <did>
+                    <form action="PHP" method="post" enctype="text/plain">
+                        <fieldset>
+                            <legend>Formulario de contacto</legend>
+                            <label for="Nombre">Nombre:</label>
+                            <input TYPE="text" name="Nombre" placeholder="Juan">
+                            <br>
+                            <label for="Apellido">Apellido:</label>
+                            <input TYPE="text" name="Apellido" placeholder="Perez">
+                            <br>
+                            <label for="Correo">E-mail:</label>
+                            <input TYPE="email" name="Correo" placeholder="Juan@Perez.com">
+                            <br>
+                            <label for="Telefono">Telefono:</label>
+                            <input TYPE="number" name="Telefono" placeholder="+5401170196456">
+                            <br>
+                            <label for="Consulta">Escriba su consulta:</label>
+                            <textarea name="Consulta" cols="40" rows="20"></textarea>
+                            <br>
+                            <label for="Horarios">Horarios de contacto:</label>
+                            <select name="Horarios">
+                                <option value="Mañana">8:00hs a 13:00hs</option>
+                                <option value="Tarde">15:00hs a 19:00hs</option>
+                            </select>
+                            <br>
+                            <label for="acepta">Desea que lo contactemos por telefono:</label>
+                            <input type="checkbox" name="acepta" value="1">
+                            <br>
+                            <input TYPE="submit" value="Enviar formulario">
+                            <input TYPE="reset" value="Resetear formulario" placeholder>
+                        </fieldset>
+                    </form>
+                </did>
             </article>
         </section>
-        <aside>
+        <!--<aside>
             <p>Hola soy un aside voy del lado derecho de la web</p>
-
-        </aside>
+        </aside>-->
         <footer>
             <div><p>Ruby Style</p></div>
             <div>
@@ -125,7 +135,7 @@
                 </ul>
             </div>
             <div><p>Parque Patricios, Buenos Aires, Argentina.</p></div>
-            <div><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d209964.88157635747!2d-58.51195756589846!3d-34.68748813336839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1668113108809!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26270.378651882726!2d-58.42066887020203!3d-34.60928602774148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaefda95a351%3A0x88dbf09429e0b121!2sBalvanera%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1668187539562!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         </footer>
     </body>
 </html>
