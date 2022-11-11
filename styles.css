@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: rubik, arial;
+}
+ol {
+    list-style-type: none;
+}
+ul {
+    list-style-type: none;
+}
+body {
+    background-color: #FDF1E4;
+}
+.logotipo {
+    line-height: 1;
+}
+.logotipo h1{
+    text-align: left;
+    font-weight: 750;
+}
+.logotipo p{
+    text-align: left;
+    font-weight: 300;
+    font-style: oblique;
+}
