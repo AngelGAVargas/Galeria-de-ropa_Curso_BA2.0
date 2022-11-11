@@ -7,10 +7,24 @@
         <link href="https://fonts.googleapis.com/css?family=rubik" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header ID="cabecera">
             <div class="logotipo">
                 <h1>Ruby Style</h1>
                 <p>Indumentaria unisex</p>
+            </div>
+            <div class="buscador">
+                <form ID="buscador" action="PHP" method="post" enctype="text/plain">
+                    <select name="categorias">
+                        <option value="Todos">Todos</option>
+                        <option value="Damas">Damas</option>
+                        <option value="Hombres">Hombres</option>
+                    </select>
+                    <input type="text" name="buscar" placeholder="Buscar">
+                </form>
+            </div>
+            <div class="opciones-header">
+                <a href="#">Ayuda</a>
+                <a href="#">Mi cuenta</a>
             </div>
         </header>
         <nav>
