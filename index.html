@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8"/>
         <title>RubyStyle</title>
-        <link rel="stylesheet" href="css/bootstrap-reboot.css"/>
-        <link rel="stylesheet" href="css/bootstrap-reboot.min.css"/>
+        <!--<link rel="stylesheet" href="css/bootstrap-reboot.css"/>
+        <link rel="stylesheet" href="css/bootstrap-reboot.min.css"/> -->
         <link rel="stylesheet" href="css/styles.css"/>
         <link href="https://fonts.googleapis.com/css?family=rubik" rel="stylesheet">
         <!-- <link rel="stylesheet" href="css/bootstrap.css"/>
@@ -19,19 +19,23 @@
                 <h1>Ruby Style</h1>
                 <p>Indumentaria unisex</p>
             </div>
-            <div class="buscador">
-                <form ID="buscador" action="PHP" method="post" enctype="text/plain">
-                    <select name="categorias">
+            <div class="header-consulta">
+                <a href="#">Consultas</a>
+            </div>
+            <div class="container-buscador">
+                <form ID="buscador" action="PHP" method="post" enctype="text/plain" class="buscador">
+                    <select name="categorias" class="opc-buscar">
                         <option value="Todos">Todos</option>
                         <option value="Damas">Damas</option>
                         <option value="Hombres">Hombres</option>
                     </select>
-                    <input type="text" name="buscar" placeholder="Buscar">
+                    <input type="text" name="texto" placeholder="Buscar" class="text-buscar">
+                    <input type="button" name="buscar" value="buscar" class="btn-buscar">
                 </form>
             </div>
             <div class="opciones-header">
                 <a href="#">Ayuda</a>
-                <a href="#">Mi cuenta</a>
+                <a href="#">Ingresar</a>
             </div>
         </header>
         <nav>
@@ -40,46 +44,56 @@
                     <li class="activo">
                         <a href="#">Inicio</a>
                     </li>
+                    <li><a href="#">Mujer</a></li>
+                    <li><a href="#">Hombre</a></li>
+                    <li><a href="#">Talles XL</a></li>
+                    <li><a href="#">Niños</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Deportivo</a></li>
+                    <li><a href="#">Lenceria</a></li>
+                    <li><a href="#">Calzado</a></li>
+                    <li><a href="#">Hogar</a></li>
                     <li>
-                        <a href="#">Damas</a>
+                        <a href="#">mas</a>
                         <ul>
-                            <li><a href="#">Zapatos</a></li>
-                            <li><a href="#">Pantalones</a></li>
-                            <li><a href="#">Remeras</a></li>
+                            <li><a href="#">Moda Verano 2022</a></li>
+                            <li><a href="#">Destacado</a></li>
+                            <li><a href="#">Consultas</a></li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="#">Hombres</a>
-                        <ul>
-                            <li><a href="#">Zapatos</a></li>
-                            <li><a href="#">Pantalones</a></li>
-                            <li><a href="#">Remeras</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Contatos</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <section>
             <article>
-                <div  class="container">
-                    <h2>Titulo de seccion</h2>
-                    <div class="row">
-                        <p>Contenido de la seccion</p>
+                <div id="container-banner">
+                    <div class="img-banner"><img src="img/banner1.jpg" alt="Mujer con dos prendas en las manos"></div>
+                    <div class="img-banner"><img src="img/banner2.jpg" alt="Mujer mirando prensas colgadas"></div>
+                    <div class="img-banner"><img src="img/banner3.jpg" alt="Hombre posando una camisa manga corta color celeste"></div>
+                </div>
+            </article>
+            <article>
+                <div id="ofertas">
+                    <div class="oferta">
+                        <h3>Ofertas</h3>
+                        <p>Super ofertas, validas hasta el 10 de noviembre del 2022.</p>
+                        <img src="img/oferta1.jpg" alt="Oferta valida solamente hasta el 10 de noviembre del 2022.">
                     </div>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <div><img src="img/banner1.jpg" alt="Mujer con dos prendas en las manos"></div>
-                    <div><img src="img/banner2.jpg" alt="Mujer mirando prensas colgadas"></div>
-                    <div><img src="img/banner3.jpg" alt="Hombre posando una camisa manga corta color celeste"></div>
-                </div>
-            </article>
-            <article>
-                <div ID="ofertas">
+                    <div class="oferta">
+                        <h3>Ofertas</h3>
+                        <p>Super ofertas, validas hasta el 10 de noviembre del 2022.</p>
+                        <img src="img/oferta1.jpg" alt="Oferta valida solamente hasta el 10 de noviembre del 2022.">
+                    </div>
+                    <div class="oferta">
+                        <h3>Ofertas</h3>
+                        <p>Super ofertas, validas hasta el 10 de noviembre del 2022.</p>
+                        <img src="img/oferta1.jpg" alt="Oferta valida solamente hasta el 10 de noviembre del 2022.">
+                    </div>
+                    <div class="oferta">
+                        <h3>Ofertas</h3>
+                        <p>Super ofertas, validas hasta el 10 de noviembre del 2022.</p>
+                        <img src="img/oferta1.jpg" alt="Oferta valida solamente hasta el 10 de noviembre del 2022.">
+                    </div>
                     <div class="oferta">
                         <h3>Ofertas</h3>
                         <p>Super ofertas, validas hasta el 10 de noviembre del 2022.</p>
