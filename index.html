@@ -3,8 +3,15 @@
     <head>
         <meta charset="utf-8"/>
         <title>RubyStyle</title>
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="css/bootstrap-reboot.css"/>
+        <link rel="stylesheet" href="css/bootstrap-reboot.min.css"/>
+        <link rel="stylesheet" href="css/styles.css"/>
         <link href="https://fonts.googleapis.com/css?family=rubik" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/bootstrap-grid.css"/>
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/> -->
+
     </head>
     <body>
         <header ID="cabecera">
@@ -29,15 +36,25 @@
         </header>
         <nav>
             <div>
-                <ul>
-                    <li>
+                <ul class="menu-nav">
+                    <li class="activo">
                         <a href="#">Inicio</a>
                     </li>
                     <li>
                         <a href="#">Damas</a>
+                        <ul>
+                            <li><a href="#">Zapatos</a></li>
+                            <li><a href="#">Pantalones</a></li>
+                            <li><a href="#">Remeras</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#">Hombres</a>
+                        <ul>
+                            <li><a href="#">Zapatos</a></li>
+                            <li><a href="#">Pantalones</a></li>
+                            <li><a href="#">Remeras</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#">Contatos</a>
@@ -46,6 +63,14 @@
             </div>
         </nav>
         <section>
+            <article>
+                <div  class="container">
+                    <h2>Titulo de seccion</h2>
+                    <div class="row">
+                        <p>Contenido de la seccion</p>
+                    </div>
+                </div>
+            </article>
             <article>
                 <div>
                     <div><img src="img/banner1.jpg" alt="Mujer con dos prendas en las manos"></div>
