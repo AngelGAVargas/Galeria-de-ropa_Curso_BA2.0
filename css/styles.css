@@ -47,7 +47,7 @@ body {
     width: 13%;
 }
 .logotipo h1{
-    color: rgb(255, 77, 160);
+    color: rgb(255, 144, 53);
     text-align: left;
     font-weight: 750;
     font-size: 2.5rem;
@@ -62,7 +62,7 @@ body {
     width: 7%;
 }
 .header-consulta a:hover{
-    color: rgb(0, 153, 255);
+    color: rgb(255, 144, 53);
 }
 .container-buscador {
     display: flex;
@@ -71,7 +71,7 @@ body {
 }
 .buscador{
     box-shadow: 0px 1px 3px 0px rgb(0, 0, 0, 0.4);
-    border-radius: 4px;
+    border-radius: 5px;
 }
 .opc-buscar{
     height: 35px;
@@ -80,23 +80,18 @@ body {
     padding-right: 4px;
     border: none;
     text-align: center;
+    outline: none;
 }
 .opc-buscar:hover{
-    color: rgb(0, 153, 255);
+    color: rgb(255, 144, 53);
     background-color: rgba(230, 230, 230, 10);
-}
-.opc-buscar::before{
-    height: 35px;
-    width: 140px;
-    padding-left: 4px;
-    padding-right: 4px;
-    border: none;
 }
 .text-buscar{
     height: 35px;
     width: 240px;
     border: none;
     padding-left: 10px;
+    outline: none;
 }
 .btn-buscar{
     height: 35px;
@@ -109,6 +104,7 @@ body {
     width: 60px;
     border: none;
     background-color: rgba(230, 230, 230, 10);
+    color: rgb(255, 144, 53);
 }
 .opciones-header {
     display: flex;
@@ -119,7 +115,7 @@ body {
     padding: 0px 10px 0px 10px;
 }
 .opciones-header a:hover {
-    color: rgb(0, 153, 255);
+    color: rgb(255, 144, 53);
 }
 .menu-nav {
     display: flex;
@@ -137,6 +133,13 @@ body {
     font-weight: thin;
     display: inline-block;
     color: #212529;
+}
+.menu-nav li:hover{
+    border-bottom: solid 2px rgb(255, 144, 53);
+    /*background-color: rgb(0, 153, 255);*/
+}
+.menu-nav li a:hover{
+    color: rgb(255, 144, 53);
 }
 .activo {
     border-bottom: solid 2px black;
@@ -171,11 +174,21 @@ body {
     background-color: rgba(230, 230, 230, 10);
 }
 #container-banner{
-    margin: 10px 0px;
     display: flex;
+    height: 300px;
+    width: 90%;
+    margin: 10px 5%;
+    overflow: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 }
 .img-banner{
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
     border: solid 2px aqua;
+    scroll-snap-align: center;
+    margin-top: -200px;
 }
 .img-banner img{
     width: 100%;
@@ -191,9 +204,13 @@ body {
     box-shadow: 0px 1px 3px 0px rgb(0, 0, 0, 0.4);
     border-radius: 4px;
     height: 320px;
+    overflow: hidden;
 }
 .oferta img{
     width: 100%;
+}
+.oferta p {
+    font-size: 1.2rem;
 }
 .oferta:hover {
     text-align: center;
@@ -201,10 +218,10 @@ body {
     box-shadow: 0px 1px 3px 1px rgb(0, 0, 0, 0.4);
     border-radius: 4px;
     height: 400px;
-    transition: all .2s;
+    transition: all .4s;
 }
 .btn-oferta{
-    margin: 20px;
+    margin-top: 20px;
 }
 .btn-oferta input{
     height: 30px;
