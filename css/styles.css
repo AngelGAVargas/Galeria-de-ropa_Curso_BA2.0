@@ -12,7 +12,7 @@ ul {
 html {
     font-size: 62.5%;
 }
-p {
+p{
     font-weight: thin;
     font-size: 1.5rem;
     color: #212529;
@@ -22,6 +22,20 @@ a{
     font-size: 1.5rem;
     text-decoration: none;
     color: #212529;
+}
+
+dt{
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 0px 5px 0px 5px;
+}
+dd{
+    font-size: 1.3rem;
+    margin: 2px 0px 6px 5px;
+}
+li{
+    font-size: 1.4rem;
+    margin: 3px 5px;
 }
 h2 {
     font-size: 2.2rem;
@@ -119,7 +133,7 @@ body {
 }
 .menu-nav {
     display: flex;
-    justify-content:left;
+    justify-content:center;
     padding: 10px 15px 0px 15px ;
     margin-bottom: 10px;
     list-style-type: none;
@@ -186,7 +200,6 @@ body {
     flex: 0 0 100%;
     width: 100%;
     object-fit: cover;
-    border: solid 2px aqua;
     scroll-snap-align: center;
     margin-top: -200px;
 }
@@ -230,4 +243,74 @@ body {
     background-color: #FFF;
     border-radius: 3px;
     box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 0.3);
+}
+.articulos {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+}
+.articulos-multimedia {
+    margin: 0px 10px 0px 10px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px 1px rgb(0, 0, 0, 0.2);
+}
+.articulos-multimedia h3 {
+    color: #33373a;
+    margin: 5px 0px 20px 10px;
+}
+.articulos-textos {
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    width: 400px;
+    text-align: justify;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px 1px rgb(0, 0, 0, 0.2);
+}
+.articulos-textos p{
+    font-weight: 700;
+}
+
+footer{
+    border: solid 2px seagreen;
+}
+.container-horizontal-3{
+    border: solid 1px blue;
+    display: flex;
+    justify-content: space-around;
+}
+.container-horizontal{
+    border: solid 1px aqua;
+    display: flex;
+    justify-content: space-around;
+}
+.separador-horizontal{
+    width: 60%;
+}
+.logotipo-footer {
+    line-height: 1.1;
+    width: 13%;
+}
+.logotipo-footer h1{
+    color: rgb(75, 75, 75);
+    text-align: center;
+    font-weight: 750;
+    font-size: 2.5rem;
+}
+.logotipo-footer p{
+    text-align: center;
+    font-weight: 400;
+    font-style: oblique;
+    font-size: 1.3rem;
+}
+.marca{
+    margin: 5px 10px;
+    text-align: left;
+}
+.tyc{
+    margin: 5px 10px;
+    text-align: right;
+}
+.tyc a:hover{
+    color: rgb(255, 144, 53);
 }
