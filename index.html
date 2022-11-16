@@ -152,36 +152,49 @@
                 </div>  
             </article>
             <article>
-                <did>
+                <did class="container-form">
                     <form action="PHP" method="post" enctype="text/plain">
                         <fieldset>
                             <legend>Formulario de contacto</legend>
-                            <label for="Nombre">Nombre:</label>
-                            <input TYPE="text" name="Nombre" placeholder="Juan">
-                            <br>
-                            <label for="Apellido">Apellido:</label>
-                            <input TYPE="text" name="Apellido" placeholder="Perez">
-                            <br>
-                            <label for="Correo">E-mail:</label>
-                            <input TYPE="email" name="Correo" placeholder="Juan@Perez.com">
-                            <br>
-                            <label for="Telefono">Telefono:</label>
-                            <input TYPE="number" name="Telefono" placeholder="+5401170196456">
-                            <br>
-                            <label for="Consulta">Escriba su consulta:</label>
-                            <textarea name="Consulta" cols="40" rows="20"></textarea>
-                            <br>
-                            <label for="Horarios">Horarios de contacto:</label>
-                            <select name="Horarios">
-                                <option value="Mañana">8:00hs a 13:00hs</option>
-                                <option value="Tarde">15:00hs a 19:00hs</option>
-                            </select>
-                            <br>
-                            <label for="acepta">Desea que lo contactemos por telefono:</label>
-                            <input type="checkbox" name="acepta" value="1">
-                            <br>
-                            <input TYPE="submit" value="Enviar formulario">
-                            <input TYPE="reset" value="Resetear formulario" placeholder>
+                            <div class="container-form-1">
+                                <div class="container-form-1-1">
+                                    <div class="div-container-form">
+                                        <div><label for="Nombre">Nombre:</label></div>
+                                        <input TYPE="text" name="Nombre" placeholder="Juan">
+                                    </div>
+                                    <div class="div-container-form">
+                                        <div><label for="Apellido">Apellido:</label></div>
+                                        <input TYPE="text" name="Apellido" placeholder="Perez">
+                                    </div>
+                                    <div class="div-container-form">
+                                        <div><label for="Correo">E-mail:</label></div>
+                                        <input TYPE="email" name="Correo" placeholder="Juan@Perez.com">
+                                    </div>
+                                    <div class="div-container-form">
+                                        <div><label for="Telefono">Telefono:</label></div>
+                                        <input TYPE="number" name="Telefono" placeholder="+5401170196456">
+                                    </div>
+                                    <div class="div-container-form">
+                                        <div><label for="Horarios">Horarios de contacto:</label></div>
+                                        <select name="Horarios">
+                                            <option value="Mañana">8:00hs a 13:00hs</option>
+                                            <option value="Tarde">15:00hs a 19:00hs</option>
+                                        </select>
+                                    </div>
+                                    <div class="div-container-form-check">
+                                        <label for="acepta">Desea que lo contactemos por telefono:</label>
+                                        <input type="checkbox" name="acepta" value="1">
+                                    </div>
+                                </div>
+                                <div class="container-form-1-2">
+                                    <div><label for="Consulta">Escriba su consulta:</label></div>
+                                    <textarea name="Consulta" ></textarea>
+                                </div>
+                            </div>
+                            <div class="container-form-2">
+                                <input TYPE="submit" value="Enviar formulario">
+                                <input TYPE="reset" value="Resetear formulario" placeholder>
+                            </div>
                         </fieldset>
                     </form>
                 </did>
@@ -192,17 +205,11 @@
         </aside>-->
         <footer>
             <div class="container-horizontal">
-                <div><p>Ruby Style</p></div>
+
+            </div>
+            <div class="container-maps">
                 <div>
-                    <ul>
-                        <li></li>
-                        <li><a href="#">Contactos</a></li>
-                        <li><a href="#">Mapa del sitio</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p>Parque Patricios, Buenos Aires, Argentina.</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26270.378651882726!2d-58.42066887020203!3d-34.60928602774148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaefda95a351%3A0x88dbf09429e0b121!2sBalvanera%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1668187539562!5m2!1ses-419!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26270.378651882726!2d-58.42066887020203!3d-34.60928602774148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaefda95a351%3A0x88dbf09429e0b121!2sBalvanera%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1668187539562!5m2!1ses-419!2sar" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <div class="container-horizontal-3">
@@ -213,7 +220,14 @@
             </div>
             <div class="container-horizontal-3">
                 <div class="marca"><p>Ruby Style© 2022 - Made by Angel Vargas. </p></div>
-                <div class="separador-horizontal"></div>
+                <div class="menu-footer">
+                    <ul>
+                        <li></li>
+                        <li><a href="#">Contactos</a></li>
+                        <li><a href="#">Mapa del sitio</a></li>
+                    </ul>
+                </div>
+                <!--<div class="separador-horizontal"></div>-->
                 <div class="tyc"><a href="#">Terminos y condiciones</a></div>
             </div>
         </footer>
