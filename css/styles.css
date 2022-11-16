@@ -114,7 +114,7 @@ body {
     height: 35px;
     width: 60px;
     border: none;
-    background-color: #FFF;
+    background-color: rgb(255, 255, 255);
 }
 .btn-buscar:hover{
     height: 35px;
@@ -416,4 +416,458 @@ body {
 }
 .tyc a:hover{
     color: rgb(255, 144, 53);
+}
+@media (max-width: 576px){
+    *{
+        border: solid 1px red;
+        margin: 0;
+        padding: 0;
+        font-family: rubik, arial;
+    }
+    ol {
+        list-style-type: none;
+    }
+    ul {
+        list-style-type: none;
+    }
+    html {
+        font-size: 62.5%;
+    }
+    p{
+        font-weight: thin;
+        font-size: 1.5rem;
+        color: #212529;
+    }
+    a{
+        font-weight: thin;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #212529;
+    }
+    label{
+        font-weight: thin;
+        font-size: 1.5rem;
+        color: #212529;
+    }
+    dt{
+        font-weight: 500;
+        font-size: 1.4rem;
+        margin: 0px 5px 0px 5px;
+    }
+    dd{
+        font-size: 1.3rem;
+        margin: 2px 0px 6px 5px;
+    }
+    li{
+        font-size: 1.4rem;
+        margin: 3px 5px;
+    }
+    h2 {
+        font-size: 2.2rem;
+    }
+    h3 {
+        font-size: 1.9rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    body {
+        background-color: #FFF;
+    }
+    #cabecera {
+        display: flex;
+        align-items: center;
+        height: 45px;
+        /*padding: 5px 15px 0px 15px;*/
+    }
+    .logotipo {
+        line-height: 1.1;
+        width: 13%;
+    }
+    .logotipo h1{
+        color: rgb(255, 53, 221);
+        text-align: left;
+        font-weight: 750;
+        font-size: 2.5rem;
+    }
+    .logotipo p{
+        text-align: left;
+        font-weight: 300;
+        font-style: oblique;
+        font-size: 1.3rem;
+    }
+    .header-consulta{
+        visibility: hidden;
+        width: 7%;
+    }
+    .container-buscador {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+    }
+    .buscador{
+        box-shadow: 0px 1px 3px 0px rgb(0, 0, 0, 0.4);
+        border-radius: 5px;
+    }
+    .opc-buscar{
+        height: 35px;
+        width: auto;
+        padding-left: 4px;
+        padding-right: 4px;
+        border: none;
+        text-align: center;
+        outline: none;
+    }
+    .opc-buscar:hover{
+        color: rgb(255, 144, 53);
+        background-color: rgba(230, 230, 230, 10);
+    }
+    .text-buscar{
+        height: 35px;
+        width: 240px;
+        border: none;
+        padding-left: 10px;
+        outline: none;
+    }
+    .btn-buscar{
+        height: 35px;
+        width: 60px;
+        border: none;
+        background-color: #FFF;
+    }
+    .btn-buscar:hover{
+        height: 35px;
+        width: 60px;
+        border: none;
+        background-color: rgba(230, 230, 230, 10);
+        color: rgb(255, 144, 53);
+    }
+    .opciones-header {
+        display: flex;
+        justify-content: right;
+        width: 20%;
+    }
+    .opciones-header a {
+        padding: 0px 10px 0px 10px;
+    }
+    .opciones-header a:hover {
+        color: rgb(255, 144, 53);
+    }
+    .menu-nav {
+        display: flex;
+        justify-content:center;
+        padding: 10px 15px 0px 15px ;
+        margin-bottom: 10px;
+        list-style-type: none;
+        overflow: hidden;
+        box-shadow: 0px 4px 4px rgb(29, 29, 29, 0.25);
+    }
+    .menu-nav li {
+        padding: 0px 12px 0px 12px;
+    }
+    .menu-nav li a {
+        font-weight: thin;
+        display: inline-block;
+        color: #212529;
+    }
+    .menu-nav li:hover{
+        border-bottom: solid 2px rgb(255, 144, 53);
+        /*background-color: rgb(0, 153, 255);*/
+    }
+    .menu-nav li a:hover{
+        color: rgb(255, 144, 53);
+    }
+    .activo {
+        border-bottom: solid 2px black;
+    }
+    .activo a{
+        padding-bottom: 8px;
+        font-weight: bolder;
+        color: black;
+    }
+    .menu-nav ul {
+        margin-top: 10px;
+        border-radius: 4px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: #FFF;
+        position: absolute;
+        display: none;
+    }
+    .menu-nav ul li {
+        padding: 15px 10px 15px 10px;
+        float: none;
+        display: block;
+    }
+    .menu-nav ul li a {
+        font-weight: bold;
+        color: black;
+    }
+    .menu-nav li:hover ul {
+        display: block;
+    }
+    .menu-nav ul li:hover {
+        background-color: rgba(230, 230, 230, 10);
+    }
+    section{
+        width: 100%;
+    }
+    article{
+       width: 100%;
+    }
+    #container-banner{
+        display: flex;
+        height: 300px;
+        width: 90%;
+        margin: 10px 5%;
+        overflow: hidden;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+    .img-banner{
+        flex: 0 0 100%;
+        width: 100%;
+        object-fit: cover;
+        scroll-snap-align: center;
+        margin-top: -200px;
+    }
+    .img-banner img{
+        width: 100%;
+    }
+    #ofertas{
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 360px;
+    }
+    .oferta{
+        margin-top: 20px;
+        width: 240px;
+        text-align: center;
+        box-shadow: 0px 1px 3px 0px rgb(0, 0, 0, 0.4);
+        border-radius: 4px;
+        height: 300px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    .oferta img{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .oferta p {
+        font-size: 1.2rem;
+    }
+    .oferta:hover {
+        box-shadow: 0px 1px 3px 1px rgb(0, 0, 0, 0.4);
+        border-radius: 4px;
+        height: 350px;
+        transition: all .4s;
+    }
+    .btn-oferta{
+        padding: 10px;
+    }
+    .btn-oferta input{
+        height: 30px;
+        width: 90px;
+        border: solid 1px rgba(0, 0, 0, 0.3);
+        background-color: #FFF;
+        border-radius: 3px;
+        box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 0.3);
+    }
+    .articulos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px 0px 10px 0px;
+    }
+    .articulos-multimedia {
+        border: solid 1px green;
+        margin: 0px 10px 0px 10px;
+        padding: 10px;
+        border-radius: 4px;
+        box-shadow: 0px 1px 3px 1px rgb(0, 0, 0, 0.2);
+    }
+    .ifr-articulo{
+        width: 90%;
+        height: 260px;
+    }
+    .articulos-multimedia h3 {
+        color: #33373a;
+        margin: 5px 0px 20px 10px;
+    }
+    .articulos-textos {
+        margin: 10px 10px 10px 10px;
+        padding: 10px;
+        width: 400px;
+        text-align: justify;
+        border-radius: 4px;
+        box-shadow: 0px 1px 3px 1px rgb(0, 0, 0, 0.2);
+    }
+    .articulos-textos p{
+        font-weight: 700;
+    }
+    .container-form{
+        border:  solid 2px green;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        box-shadow: 0px -1px 8px 0px rgb(0, 0, 0, 0.2);
+        padding: 0px;
+    }
+    .container-form fieldset{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        border: solid 2px blue;
+        font-size: 1.6rem;
+    }
+    .container-form-1{
+        border: solid 2px red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .container-form-1-1{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 100%;
+        margin: 20px 0px 10px 0px;
+    }
+    .container-form-1-2{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin: 10px 0px 0px 0px;
+    }
+    .container-form-1-2 div{
+        margin-bottom: 10px;
+    }
+    .container-form-1-2 textarea{
+        width: 100%;
+        height: 230px;
+        padding: 10px;
+        border: solid 1px rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+        box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 0.3);
+        outline: none;
+    }
+    .div-container-form{
+        width: 100%;
+        margin: 5px 0px;
+    }
+    .div-container-form-check{
+        margin-top: 20px
+    }
+    .div-container-form-check input{
+        margin-left: 10px;
+        width: 15px;
+        height: 15px;
+        border-radius: 4px;
+        border: solid 1px rgba(0, 0, 0, 0.3);
+        outline: none;
+    }
+    .div-container-form input{
+        width: 95%px;
+        height: 24px;
+        padding-left: 5px;
+        border-radius: 4px;
+        border: solid 1px rgba(0, 0, 0, 0.3);
+        outline: none;
+    }
+    .div-container-form input:hover{
+        border-bottom: solid 2px rgba(255, 144, 53, 0.8);
+    }
+    .div-container-form input:focus{
+        border-bottom: solid 2px rgba(255, 144, 53, 0.8);
+    }
+    .div-container-form select{
+        width: 300px;
+        height: 24px;
+        border-radius: 4px;
+        border: solid 1px rgba(0, 0, 0, 0.3);
+        outline: none;
+    }
+    .container-form-2{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-form-2 input{
+        margin: 20px 0px;
+        height: 30px;
+        width: 140px;
+        border: solid 1px rgba(0, 0, 0, 0.3);
+        background-color: #FFF;
+        border-radius: 3px;
+        box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 0.3);
+    }
+    .container-form-2 input:hover{
+        color: rgb(255, 144, 53 );
+        box-shadow: 0px 1px 5px 0px rgba(255, 144, 53, 0.8);
+    }
+    .container-horizontal-3{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-maps{
+        height: 0px;
+        visibility: hidden;
+    }
+    .separador-horizontal{
+        width: 0px;
+    }
+    .logotipo-footer {
+        line-height: 1.1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .logotipo-footer h1{
+        color: rgb(75, 75, 75);
+        text-align: center;
+        font-weight: 750;
+        font-size: 2.5rem;
+    }
+    .logotipo-footer p{
+        text-align: center;
+        font-weight: 400;
+        font-style: oblique;
+        font-size: 1.3rem;
+    }
+    .marca{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 5px 0px;
+    }
+    .menu-footer{
+        width: 100%;
+        margin: 5px 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .menu-footer li {
+        font-weight: thin;
+        display: inline-block;
+    }
+    .menu-footer li a {
+        color: rgb(255, 144, 53);
+    }
+    .tyc{
+        width: 100%;
+        margin: 5px 0px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .tyc a:hover{
+        color: rgb(255, 144, 53);
+    }
 }
