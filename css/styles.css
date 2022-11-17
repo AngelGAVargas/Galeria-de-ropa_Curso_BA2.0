@@ -53,439 +53,20 @@ h1 {
 body {
     background-color: #FFF;
 }
-#cabecera {
-    display: flex;
-    align-items: center;
-    height: 45px;
-    padding: 5px 15px 0px 15px;
-}
-.logotipo {
-    line-height: 1.1;
-    width: 13%;
-}
-.logotipo h1{
-    color: rgb(255, 144, 53);
-    text-align: left;
-    font-weight: 750;
-    font-size: 2.5rem;
-}
-.logotipo p{
-    text-align: left;
-    font-weight: 300;
-    font-style: oblique;
-    font-size: 1.3rem;
-}
-.header-consulta{
-    width: 7%;
-}
-.header-consulta a:hover{
-    color: rgb(255, 144, 53);
-}
-.container-buscador {
-    display: flex;
-    justify-content: center;
-    width: 60%;
-}
-.buscador{
-    box-shadow: 0px 1px 3px 0px rgb(0, 0, 0, 0.4);
-    border-radius: 5px;
-}
-.opc-buscar{
-    height: 35px;
-    width: auto;
-    padding-left: 4px;
-    padding-right: 4px;
-    border: none;
-    text-align: center;
-    outline: none;
-}
-.opc-buscar:hover{
-    color: rgb(255, 144, 53);
-    background-color: rgba(230, 230, 230, 10);
-}
-.text-buscar{
-    height: 35px;
-    width: 240px;
-    border: none;
-    padding-left: 10px;
-    outline: none;
-}
-.btn-buscar{
-    height: 35px;
-    width: 60px;
-    border: none;
-    background-color: rgb(255, 255, 255);
-}
-.btn-buscar:hover{
-    height: 35px;
-    width: 60px;
-    border: none;
-    background-color: rgba(230, 230, 230, 10);
-    color: rgb(255, 144, 53);
-}
-.opciones-header {
-    display: flex;
-    justify-content: right;
-    width: 20%;
-}
-.opciones-header a {
-    padding: 0px 10px 0px 10px;
-}
-.opciones-header a:hover {
-    color: rgb(255, 144, 53);
-}
-.menu-nav {
-    display: flex;
-    justify-content:center;
-    padding: 10px 15px 0px 15px ;
-    margin-bottom: 10px;
-    list-style-type: none;
-    overflow: hidden;
-    box-shadow: 0px 4px 4px rgb(29, 29, 29, 0.25);
-}
-.menu-nav li {
-    padding: 0px 12px 0px 12px;
-}
-.menu-nav li a {
-    font-weight: thin;
-    display: inline-block;
-    color: #212529;
-}
-.menu-nav li:hover{
-    border-bottom: solid 2px rgb(255, 144, 53);
-    /*background-color: rgb(0, 153, 255);*/
-}
-.menu-nav li a:hover{
-    color: rgb(255, 144, 53);
-}
-.activo {
-    border-bottom: solid 2px black;
-}
-.activo a{
-    padding-bottom: 8px;
-    font-weight: bolder;
-    color: black;
-}
-.menu-nav ul {
-    margin-top: 10px;
-    border-radius: 4px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: #FFF;
-    position: absolute;
-    display: none;
-}
-.menu-nav ul li {
-    padding: 15px 10px 15px 10px;
-    float: none;
-    display: block;
-}
-.menu-nav ul li a {
-    font-weight: bold;
-    color: black;
-}
-.menu-nav li:hover ul {
-    display: block;
-}
-.menu-nav ul li:hover {
-    background-color: rgba(230, 230, 230, 10);
-}
-#container-banner{
-    display: flex;
-    height: 300px;
-    width: 90%;
-    margin: 10px 5%;
-    overflow: hidden;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-}
-.img-banner{
-    flex: 0 0 100%;
-    width: 100%;
-    object-fit: cover;
-    scroll-snap-align: center;
-    margin-top: -200px;
-}
-.img-banner img{
-    width: 100%;
-}
-#ofertas{
-    margin: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: 360px;
-}
-.oferta{
-    margin-top: 20px;
-    width: 240px;
-    text-align: center;
-    box-shadow: 0px 1px 3px 0px rgb(0, 0, 0, 0.4);
-    border-radius: 4px;
-    height: 300px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-.oferta img{
-    margin-top: 10px;
-    width: 100%;
-}
-.oferta p {
-    font-size: 1.2rem;
-}
-.oferta:hover {
-    box-shadow: 0px 1px 3px 1px rgb(0, 0, 0, 0.4);
-    border-radius: 4px;
-    height: 350px;
-    transition: all .4s;
-}
-.btn-oferta{
-    padding: 10px;
-}
-.btn-oferta input{
-    height: 30px;
-    width: 90px;
-    border: solid 1px rgba(0, 0, 0, 0.3);
-    background-color: #FFF;
-    border-radius: 3px;
-    box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 0.3);
-}
-.articulos {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0px 10px 0px;
-}
-.articulos-multimedia {
-    margin: 0px 10px 0px 10px;
-    padding: 10px;
-    border-radius: 4px;
-    box-shadow: 0px 1px 3px 1px rgb(0, 0, 0, 0.2);
-}
-.articulos-multimedia h3 {
-    color: #33373a;
-    margin: 5px 0px 20px 10px;
-}
-.articulos-textos {
-    margin: 10px 10px 10px 10px;
-    padding: 10px;
-    width: 400px;
-    text-align: justify;
-    border-radius: 4px;
-    box-shadow: 0px 1px 3px 1px rgb(0, 0, 0, 0.2);
-}
-.articulos-textos p{
-    font-weight: 700;
-}
-.container-form{
-    display: block;
-    box-shadow: 0px -1px 8px 0px rgb(0, 0, 0, 0.2);
-    padding: 20px 10px 10px 10px;
-}
-.container-form form fieldset{
-    border: none;
-    font-size: 1.6rem;
-}
-.container-form-1{
-    display: flex;
-    justify-content: space-between;
-}
-.container-form-1-1{
-    margin: 20px 0px 0px 50px;
-}
-.container-form-1-2{
-    margin: 20px 50px 0px 0px;
-}
-.container-form-1-2 div{
-    margin-bottom: 10px;
-}
-.container-form-1-2 textarea{
-    width: 600px;
-    height: 230px;
-    padding: 10px;
-    border: solid 1px rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
-    box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 0.3);
-    outline: none;
-}
-.div-container-form{
-    margin: 5px 0px;
-}
-.div-container-form-check{
-    margin-top: 20px
-}
-.div-container-form-check input{
-    margin-left: 30px;
-    width: 15px;
-    height: 15px;
-    border-radius: 4px;
-    border: solid 1px rgba(0, 0, 0, 0.3);
-    outline: none;
-}
-.div-container-form input{
-    width: 350px;
-    height: 24px;
-    padding-left: 5px;
-    border-radius: 4px;
-    border: solid 1px rgba(0, 0, 0, 0.3);
-    outline: none;
-}
-.div-container-form input:hover{
-    border-bottom: solid 2px rgba(255, 144, 53, 0.8);
-}
-.div-container-form input:focus{
-    border-bottom: solid 2px rgba(255, 144, 53, 0.8);
-}
-.div-container-form select{
-    width: 350px;
-    height: 24px;
-    border-radius: 4px;
-    border: solid 1px rgba(0, 0, 0, 0.3);
-    outline: none;
-}
-.container-form-2{
-    display: flex;
-    justify-content: center;
-}
-.container-form-2 input{
-    margin: 40px;
-    height: 30px;
-    width: 140px;
-    border: solid 1px rgba(0, 0, 0, 0.3);
-    background-color: #FFF;
-    border-radius: 3px;
-    box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 0.3);
-}
-.container-form-2 input:hover{
-    color: rgb(255, 144, 53 );
-    box-shadow: 0px 1px 5px 0px rgba(255, 144, 53, 0.8);
-}
-.container-horizontal-3{
-    display: flex;
-    justify-content: space-around;
-}
-.container-horizontal{
-    display: flex;
-    justify-content: space-around;
-}
-.container-maps{
-    box-shadow: 0px -1px 8px 0px rgb(0, 0, 0, 0.3);
-}
-.separador-horizontal{
-    width: 60%;
-}
-.logotipo-footer {
-    line-height: 1.1;
-    width: 13%;
-}
-.logotipo-footer h1{
-    color: rgb(75, 75, 75);
-    text-align: center;
-    font-weight: 750;
-    font-size: 2.5rem;
-}
-.logotipo-footer p{
-    text-align: center;
-    font-weight: 400;
-    font-style: oblique;
-    font-size: 1.3rem;
-}
-.marca{
-    width: 25%;
-    margin: 5px 10px;
-    text-align: left;
-}
-.menu-footer{
-    width: 50%;
-    display: flex;
-    justify-content:center;
-    margin: 3px 0px;
-}
-.menu-footer li {
-    font-weight: thin;
-    display: inline-block;
-}
-.menu-footer li a {
-    color: rgb(255, 144, 53);
-}
-.tyc{
-    width: 25%;
-    margin: 5px 10px;
-    text-align: right;
-}
-.tyc a:hover{
-    color: rgb(255, 144, 53);
-}
-@media (max-width: 576px){
-    *{
-        border: solid 1px red;
-        margin: 0;
-        padding: 0;
-        font-family: rubik, arial;
-    }
-    ol {
-        list-style-type: none;
-    }
-    ul {
-        list-style-type: none;
-    }
-    html {
-        font-size: 62.5%;
-    }
-    p{
-        font-weight: thin;
-        font-size: 1.5rem;
-        color: #212529;
-    }
-    a{
-        font-weight: thin;
-        font-size: 1.5rem;
-        text-decoration: none;
-        color: #212529;
-    }
-    label{
-        font-weight: thin;
-        font-size: 1.5rem;
-        color: #212529;
-    }
-    dt{
-        font-weight: 500;
-        font-size: 1.4rem;
-        margin: 0px 5px 0px 5px;
-    }
-    dd{
-        font-size: 1.3rem;
-        margin: 2px 0px 6px 5px;
-    }
-    li{
-        font-size: 1.4rem;
-        margin: 3px 5px;
-    }
-    h2 {
-        font-size: 2.2rem;
-    }
-    h3 {
-        font-size: 1.9rem;
-    }
-    h1 {
-        font-size: 2.5rem;
-    }
-    body {
-        background-color: #FFF;
-    }
+@media screen and (min-width: 1024px) {
     #cabecera {
         display: flex;
         align-items: center;
         height: 45px;
-        /*padding: 5px 15px 0px 15px;*/
+        padding: 5px 15px 0px 15px;
     }
     .logotipo {
+        display: block;
         line-height: 1.1;
-        width: 13%;
+        width: 20%;
     }
     .logotipo h1{
-        color: rgb(255, 53, 221);
+        color: rgb(255, 144, 53);
         text-align: left;
         font-weight: 750;
         font-size: 2.5rem;
@@ -497,13 +78,17 @@ body {
         font-size: 1.3rem;
     }
     .header-consulta{
-        visibility: hidden;
-        width: 7%;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+    }
+    .header-consulta a:hover{
+        color: rgb(255, 144, 53);
     }
     .container-buscador {
         display: flex;
         justify-content: center;
-        width: 60%;
+        width: 50%;
     }
     .buscador{
         box-shadow: 0px 1px 3px 0px rgb(0, 0, 0, 0.4);
@@ -533,7 +118,7 @@ body {
         height: 35px;
         width: 60px;
         border: none;
-        background-color: #FFF;
+        background-color: rgb(255, 255, 255);
     }
     .btn-buscar:hover{
         height: 35px;
@@ -555,6 +140,8 @@ body {
     }
     .menu-nav {
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content:center;
         padding: 10px 15px 0px 15px ;
         margin-bottom: 10px;
@@ -567,7 +154,6 @@ body {
     }
     .menu-nav li a {
         font-weight: thin;
-        display: inline-block;
         color: #212529;
     }
     .menu-nav li:hover{
@@ -609,12 +195,6 @@ body {
     .menu-nav ul li:hover {
         background-color: rgba(230, 230, 230, 10);
     }
-    section{
-        width: 100%;
-    }
-    article{
-       width: 100%;
-    }
     #container-banner{
         display: flex;
         height: 300px;
@@ -640,7 +220,6 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        height: 360px;
     }
     .oferta{
         margin-top: 20px;
@@ -680,28 +259,32 @@ body {
     .articulos {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         margin: 10px 0px 10px 0px;
     }
     .articulos-multimedia {
-        border: solid 1px green;
-        margin: 0px 10px 0px 10px;
-        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 300px;
+        margin: 10px 10px;
+        padding: 5px;
         border-radius: 4px;
         box-shadow: 0px 1px 3px 1px rgb(0, 0, 0, 0.2);
     }
-    .ifr-articulo{
-        width: 90%;
-        height: 260px;
-    }
     .articulos-multimedia h3 {
         color: #33373a;
-        margin: 5px 0px 20px 10px;
+        margin: 10px;
+    }
+    .ifr-articulo iframe{
+        width: 100%;
+        height: 250px;
     }
     .articulos-textos {
-        margin: 10px 10px 10px 10px;
+        margin: 10px;
         padding: 10px;
-        width: 400px;
+        max-width: 400px;
+        min-width: 300px;
         text-align: justify;
         border-radius: 4px;
         box-shadow: 0px 1px 3px 1px rgb(0, 0, 0, 0.2);
@@ -709,47 +292,34 @@ body {
     .articulos-textos p{
         font-weight: 700;
     }
-    .container-form{
-        border:  solid 2px green;
+    .form{
         display: flex;
-        flex-wrap: wrap;
-        width: 100%;
+        flex-direction: column;
         box-shadow: 0px -1px 8px 0px rgb(0, 0, 0, 0.2);
-        padding: 0px;
+        padding: 20px 10px 10px 20px;
     }
-    .container-form fieldset{
+    .container-form{
         display: flex;
-        width: 100%;
-        flex-direction: column;
-        border: solid 2px blue;
-        font-size: 1.6rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
-    .container-form-1{
-        border: solid 2px red;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .container-form-1-1{
+    .container-form-datos{
+        padding: 20px;
         display: flex;
         flex-direction: column;
-        align-items: left;
-        width: 100%;
-        margin: 20px 0px 10px 0px;
     }
-    .container-form-1-2{
+    .container-form-consulta{
+        padding: 20px;
         display: flex;
         flex-direction: column;
-        align-items: left;
-        margin: 10px 0px 0px 0px;
     }
-    .container-form-1-2 div{
+    .container-form-consulta div{
         margin-bottom: 10px;
     }
-    .container-form-1-2 textarea{
-        width: 100%;
-        height: 230px;
+    .container-form-consulta textarea{
+        width: 500px;
+        height: 100%;
         padding: 10px;
         border: solid 1px rgba(0, 0, 0, 0.3);
         border-radius: 4px;
@@ -757,7 +327,6 @@ body {
         outline: none;
     }
     .div-container-form{
-        width: 100%;
         margin: 5px 0px;
     }
     .div-container-form-check{
@@ -772,7 +341,7 @@ body {
         outline: none;
     }
     .div-container-form input{
-        width: 95%px;
+        width: 343px;
         height: 24px;
         padding-left: 5px;
         border-radius: 4px;
@@ -786,20 +355,21 @@ body {
         border-bottom: solid 2px rgba(255, 144, 53, 0.8);
     }
     .div-container-form select{
-        width: 300px;
+        width: 350px;
         height: 24px;
+        padding-left: 5px;
         border-radius: 4px;
         border: solid 1px rgba(0, 0, 0, 0.3);
         outline: none;
     }
-    .container-form-2{
+    .container-form-input{
         display: flex;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    .container-form-2 input{
-        margin: 20px 0px;
+    .container-form-input input{
+        margin: 40px;
         height: 30px;
         width: 140px;
         border: solid 1px rgba(0, 0, 0, 0.3);
@@ -807,27 +377,25 @@ body {
         border-radius: 3px;
         box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 0.3);
     }
-    .container-form-2 input:hover{
+    .container-form-input input:hover{
         color: rgb(255, 144, 53 );
         box-shadow: 0px 1px 5px 0px rgba(255, 144, 53, 0.8);
     }
     .container-horizontal-3{
         display: flex;
-        flex-direction: column;
+        justify-content: space-around;
+        height: 42px;
+    }
+    .container-horizontal{
+        display: flex;
+        justify-content: space-around;
     }
     .container-maps{
-        height: 0px;
-        visibility: hidden;
-    }
-    .separador-horizontal{
-        width: 0px;
+        box-shadow: 0px -1px 8px 0px rgb(0, 0, 0, 0.3);
     }
     .logotipo-footer {
         line-height: 1.1;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 10px;
+        width: 20%;
     }
     .logotipo-footer h1{
         color: rgb(75, 75, 75);
@@ -842,32 +410,410 @@ body {
         font-size: 1.3rem;
     }
     .marca{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin: 5px 0px;
+        width: 30%;
+        margin: 5px 10px;
+        text-align: left;
+    
     }
     .menu-footer{
-        width: 100%;
-        margin: 5px 0px;
         display: flex;
-        justify-content: center;
+        justify-content:center;
+        margin: 3px 0px;
     }
     .menu-footer li {
-        font-weight: thin;
         display: inline-block;
+        font-weight: thin;
+        text-align: center;
     }
     .menu-footer li a {
         color: rgb(255, 144, 53);
     }
     .tyc{
-        width: 100%;
-        margin: 5px 0px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
+        width: 30%;
+        margin: 5px 10px;
+        text-align: right;
     }
     .tyc a:hover{
         color: rgb(255, 144, 53);
+    }   
+}
+@media screen and (min-width: 768px){
+    
+}
+@media (max-width: 576px){
+    #cabecera {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
     }
+    .logotipo {
+        display: block;
+        line-height: 1.1;
+        margin: 10px 0px;
+    }
+    .logotipo h1{
+        color: rgb(255, 144, 53);
+        text-align: left;
+        font-weight: 750;
+        font-size: 2.5rem;
+    }
+    .logotipo p{
+        text-align: left;
+        font-weight: 300;
+        font-style: oblique;
+        font-size: 1.3rem;
+    }
+    .header-consulta{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .container-buscador {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .buscador{
+        box-shadow: 0px 1px 3px 0px rgb(0, 0, 0, 0.4);
+        border-radius: 5px;
+    }
+    .opc-buscar{
+        height: 35px;
+        width: auto;
+        padding-left: 4px;
+        padding-right: 4px;
+        border: none;
+        text-align: center;
+        outline: none;
+    }
+    .opc-buscar:hover{
+        color: rgb(255, 144, 53);
+        background-color: rgba(230, 230, 230, 10);
+    }
+    .text-buscar{
+        height: 35px;
+        width: 160px;
+        border: none;
+        padding-left: 10px;
+        outline: none;
+    }
+    .btn-buscar{
+        height: 35px;
+        width: 60px;
+        border: none;
+        background-color: rgb(255, 255, 255);
+    }
+    .btn-buscar:hover{
+        height: 35px;
+        width: 60px;
+        border: none;
+        background-color: rgba(230, 230, 230, 10);
+        color: rgb(255, 144, 53);
+    }
+    .opciones-header {
+        display: flex;
+        justify-content: right;
+        margin: 10px 0px;
+    }
+    .opciones-header a {
+        padding: 0px 10px 0px 10px;
+    }
+    .opciones-header a:hover {
+        color: rgb(255, 144, 53);
+    }
+    .menu-nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        margin-bottom: 10px;
+        list-style-type: none;
+        overflow: hidden;
+        box-shadow: 0px 4px 4px rgb(29, 29, 29, 0.25);
+    }
+    .menu-nav li {
+        padding: 5px 12px 5px 12px;
+    }
+    .menu-nav li a {
+        font-weight: thin;
+        color: #212529;
+    }
+    .menu-nav li:hover{
+        border-bottom: solid 2px rgb(255, 144, 53);
+    }
+    .menu-nav li a:hover{
+        color: rgb(255, 144, 53);
+    }
+    .activo {
+        border-bottom: solid 2px black;
+    }
+    .activo a{
+        padding-bottom: 8px;
+        font-weight: bolder;
+        color: black;
+    }
+    .menu-nav ul {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .menu-nav ul li {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .menu-nav ul li a {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .menu-nav li:hover ul {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .menu-nav ul li:hover {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    #container-banner{
+        visibility: hidden;
+        height: 250px;
+        width: 1xp;
+    }
+    .img-banner{
+        flex: 0 0 100%;
+        width: 100%;
+        object-fit: cover;
+        scroll-snap-align: center;
+        margin-top: -200px;
+    }
+    .img-banner img{
+        width: 100%;
+    }
+    #ofertas{
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .oferta{
+        margin-top: 20px;
+        width: 240px;
+        text-align: center;
+        box-shadow: 0px 1px 3px 0px rgb(0, 0, 0, 0.4);
+        border-radius: 4px;
+        height: 300px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    .oferta img{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .oferta p {
+        font-size: 1.2rem;
+    }
+    .oferta:hover {
+        box-shadow: 0px 1px 3px 1px rgb(0, 0, 0, 0.4);
+        border-radius: 4px;
+        height: 350px;
+        transition: all .4s;
+    }
+    .btn-oferta{
+        padding: 10px;
+    }
+    .btn-oferta input{
+        height: 30px;
+        width: 90px;
+        border: solid 1px rgba(0, 0, 0, 0.3);
+        background-color: #FFF;
+        border-radius: 3px;
+        box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 0.3);
+    }
+    .articulos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 10px 0px 10px 0px;
+    }
+    .articulos-multimedia {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 300px;
+        margin: 10px 10px;
+        padding: 5px;
+        border-radius: 4px;
+        box-shadow: 0px 1px 3px 1px rgb(0, 0, 0, 0.2);
+    }
+    .articulos-multimedia h3 {
+        color: #33373a;
+        margin: 10px;
+    }
+    .ifr-articulo iframe{
+        width: 100%;
+        height: 250px;
+    }
+    .articulos-textos {
+        margin: 10px;
+        padding: 10px;
+        max-width: 400px;
+        min-width: 300px;
+        text-align: justify;
+        border-radius: 4px;
+        box-shadow: 0px 1px 3px 1px rgb(0, 0, 0, 0.2);
+    }
+    .articulos-textos p{
+        font-weight: 700;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px -1px 8px 0px rgb(0, 0, 0, 0.2);
+        padding: 20px 10px 10px 20px;
+    }
+    .container-form{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .container-form-datos{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container-form-consulta{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container-form-consulta div{
+        margin-bottom: 10px;
+    }
+    .container-form-consulta textarea{
+        width: 500px;
+        height: 100%;
+        padding: 10px;
+        border: solid 1px rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+        box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 0.3);
+        outline: none;
+    }
+    .div-container-form{
+        margin: 5px 0px;
+    }
+    .div-container-form-check{
+        margin-top: 20px
+    }
+    .div-container-form-check input{
+        margin-left: 10px;
+        width: 15px;
+        height: 15px;
+        border-radius: 4px;
+        border: solid 1px rgba(0, 0, 0, 0.3);
+        outline: none;
+    }
+    .div-container-form input{
+        width: 343px;
+        height: 24px;
+        padding-left: 5px;
+        border-radius: 4px;
+        border: solid 1px rgba(0, 0, 0, 0.3);
+        outline: none;
+    }
+    .div-container-form input:hover{
+        border-bottom: solid 2px rgba(255, 144, 53, 0.8);
+    }
+    .div-container-form input:focus{
+        border-bottom: solid 2px rgba(255, 144, 53, 0.8);
+    }
+    .div-container-form select{
+        width: 350px;
+        height: 24px;
+        padding-left: 5px;
+        border-radius: 4px;
+        border: solid 1px rgba(0, 0, 0, 0.3);
+        outline: none;
+    }
+    .container-form-input{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container-form-input input{
+        margin: 40px;
+        height: 30px;
+        width: 140px;
+        border: solid 1px rgba(0, 0, 0, 0.3);
+        background-color: #FFF;
+        border-radius: 3px;
+        box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 0.3);
+    }
+    .container-form-input input:hover{
+        color: rgb(255, 144, 53 );
+        box-shadow: 0px 1px 5px 0px rgba(255, 144, 53, 0.8);
+    }
+    .container-horizontal-3{
+        display: flex;
+        justify-content: space-around;
+        height: 42px;
+    }
+    .container-horizontal{
+        display: flex;
+        justify-content: space-around;
+    }
+    .container-maps{
+        box-shadow: 0px -1px 8px 0px rgb(0, 0, 0, 0.3);
+    }
+    .logotipo-footer {
+        line-height: 1.1;
+        width: 20%;
+    }
+    .logotipo-footer h1{
+        color: rgb(75, 75, 75);
+        text-align: center;
+        font-weight: 750;
+        font-size: 2.5rem;
+    }
+    .logotipo-footer p{
+        text-align: center;
+        font-weight: 400;
+        font-style: oblique;
+        font-size: 1.3rem;
+    }
+    .marca{
+        width: 30%;
+        margin: 5px 10px;
+        text-align: left;
+    
+    }
+    .menu-footer{
+        display: flex;
+        justify-content:center;
+        margin: 3px 0px;
+    }
+    .menu-footer li {
+        display: inline-block;
+        font-weight: thin;
+        text-align: center;
+    }
+    .menu-footer li a {
+        color: rgb(255, 144, 53);
+    }
+    .tyc{
+        width: 30%;
+        margin: 5px 10px;
+        text-align: right;
+    }
+    .tyc a:hover{
+        color: rgb(255, 144, 53);
+    }  
 }

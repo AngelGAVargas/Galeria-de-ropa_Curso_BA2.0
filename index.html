@@ -40,7 +40,7 @@
             </div>
         </header>
         <nav>
-            <div>
+            <div class="container-nav">
                 <ul class="menu-nav">
                     <li class="activo">
                         <a href="#">Inicio</a>
@@ -65,7 +65,7 @@
                 </ul>
             </div>
         </nav>
-        <section class="seccion-flex">
+        <section>
             <article>
                 <div id="container-banner">
                     <div class="img-banner"><img src="img/banner1.jpg" alt="Mujer con dos prendas en las manos"></div>
@@ -153,11 +153,10 @@
                 </div>  
             </article>
             <article>
-                    <form action="PHP" method="post" enctype="text/plain" class="container-form">
-                        <fieldset>
-                            <legend>Formulario de contacto</legend>
-                            <div class="container-form-1">
-                                <div class="container-form-1-1">
+                    <form action="PHP" method="post" enctype="text/plain" class="form">
+                            <p>Formulario de contacto</p>
+                            <div class="container-form">
+                                <div class="container-form-datos">
                                     <div class="div-container-form">
                                         <div><label for="Nombre">Nombre:</label></div>
                                         <input TYPE="text" name="Nombre" placeholder="Juan">
@@ -186,16 +185,15 @@
                                         <input type="checkbox" name="acepta" value="1">
                                     </div>
                                 </div>
-                                <div class="container-form-1-2">
+                                <div class="container-form-consulta">
                                     <div><label for="Consulta">Escriba su consulta:</label></div>
                                     <textarea name="Consulta" ></textarea>
                                 </div>
                             </div>
-                            <div class="container-form-2">
+                            <div class="container-form-input">
                                 <input TYPE="submit" value="Enviar formulario">
                                 <input TYPE="reset" value="Resetear formulario" placeholder>
                             </div>
-                        </fieldset>
                     </form>
             </article>
         </section>
@@ -218,12 +216,10 @@
                 <div class="marca"><p>Ruby Style© 2022 - Made by Angel Vargas. </p></div>
                 <div class="menu-footer">
                     <ul>
-                        <li></li>
                         <li><a href="#">Contactos</a></li>
                         <li><a href="#">Mapa del sitio</a></li>
                     </ul>
                 </div>
-                <!--<div class="separador-horizontal"></div>-->
                 <div class="tyc"><a href="#">Terminos y condiciones</a></div>
             </div>
         </footer>
