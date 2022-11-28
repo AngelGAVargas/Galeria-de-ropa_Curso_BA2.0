@@ -1,4 +1,5 @@
 //test de javaScript
+window.onload = function(){
 /*
 alert("Hola, te regalamos una mochila :D, veamos cuantas cosas tiene."); //mensajes en formato popup
 var mochila = [' Linterna',' Celular',' Reloj',' Cargador',' Cuaderno'];//array que tambien es un tipo de variable
@@ -87,3 +88,6 @@ while (numeros[0] <= 50){ //en la condicion aclaramos que mientras el index sea 
 }
 alert("Los siguientes numeros son los primeros 25 pares del array: ");
 alert(numerosPares);
+
+
+}
