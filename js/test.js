@@ -1,4 +1,5 @@
 //test de javaScript
+/*
 alert("Hola, te regalamos una mochila :D, veamos cuantas cosas tiene."); //mensajes en formato popup
 var mochila = [' Linterna',' Celular',' Reloj',' Cargador',' Cuaderno'];//array que tambien es un tipo de variable
 var elementos = mochila.length; //metodo que muestra la cantidad de elementos que tiene el array
@@ -43,3 +44,33 @@ if (mochila.includes(nuevoelemento) == false ){
 } else {
     alert("ya existe ese elemento, intenta con otro diferente!");
 }
+*/
+/*
+alert("hola, vamos a comprobar si el numero que ingresas es par o impar.");
+var numero = prompt("Ingresa un numero:");
+var resultado = numero % 2;
+
+if (resultado == 0) {
+    var mensajePar= "El numero " + numero + " es par!";
+    alert(mensajePar);
+} else {
+    var mensajeImpar ="El numero " + numero + " es impar";
+    alert(mensajeImpar);
+}
+*/
+alert("Ahora vamos a mostrarte los 25 primeros numeros pares del array numeros");
+var numeros = [1,2,3];
+alert(numeros);
+
+var tamaño = numeros.length;//comprobando el tamaño del array numeros
+alert(tamaño);
+tamaño--;//el tamaño devuelto normalemente es mañor al index del array entonces para mostrar el ultimo numero de forma automatica, necesito restarle -1 al tamaño devuelto.
+var ultimonumero = numeros[tamaño];//muestro de forma automatica el ultimo numero contenido del array.
+alert(ultimonumero);
+
+while (ultimonumero++ <= 99){ //en esta condicion estoy diciendo que si el valor del ultimo numero sumado +1 es menor a 99, quiero que me añada uno mas.
+    numeros.push(ultimonumero);
+}
+
+var mensajeTest= "Valor de numeros es: " + numeros; //compruevo todos los numeros conteniddos del array despues del bucle.
+alert(mensajeTest);
