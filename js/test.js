@@ -1,5 +1,4 @@
 //test de javaScript
-window.onload = function(){
 /*
 alert("Hola, te regalamos una mochila :D, veamos cuantas cosas tiene."); //mensajes en formato popup
 var mochila = [' Linterna',' Celular',' Reloj',' Cargador',' Cuaderno'];//array que tambien es un tipo de variable
@@ -59,35 +58,37 @@ if (resultado == 0) {
     alert(mensajeImpar);
 }
 */
-alert("El siguiente array solamente tiene un numero");
-var numeros = [0];
+
+function numerospar(){
+    numerosPares=[];
+    var par = numeros[0]%2;
+    if(par == 0){
+        var guardarNumero = numeros[0];
+        numerosPares.push(guardarNumero);
+    }
+}
+alert("El siguiente array no tiene numeros");
+var numeros = [];
 var mensaje0 = "numeros en el array: " + numeros;
 alert(mensaje0);
 
-var tamaño = numeros.length;//comprobando el tamaño del array numeros
-//alert(tamaño);
-tamaño--;//el tamaño devuelto normalemente es mañor al index del array entonces para mostrar el ultimo numero de forma automatica, necesito restarle -1 al tamaño devuelto.
-var ultimonumero = numeros[tamaño];//muestro de forma automatica el ultimo numero contenido del array.
 alert("Ahora vamos a añadir con un bucle while, numeros al array!");
-
-while (ultimonumero++ <= 99){ //en esta condicion estoy diciendo que si el valor del ultimo numero sumado +1 es menor a 99, quiero que me añada uno mas.
-    numeros.push(ultimonumero);
+for(var i = 0; i <= 100; i++){
+    numeros.push(i);
 }
 
 var mensajeTest= "Numeros en el array: " + numeros; //compruevo todos los numeros conteniddos del array despues del bucle.
 alert(mensajeTest);
 
-var numerosPares=[];//inicializamos un nuevo array que va a contener los numero pares del anterior
-while (numeros[0] <= 50){ //en la condicion aclaramos que mientras el index sea menor o igual a 50 valla aumentando
-    var par = numeros[0]%2;//variable que contiene el resto 0
+//var numerosPares=[];//inicializamos un nuevo array que va a contener los numero pares del anterior
+for (numeros[0]; numeros[0] <=50; numeros[0]++){
+    numerospar(numeros[0]);
+    /*var par = numeros[0]%2;//variable que contiene el resto 0
     if (par == 0) {//condicion que comprueba que el resto sea 0
         var guardarNumero = numeros[0];//si el resto es 0 entonces se almacena el numero en esta variable
         numerosPares.push(guardarNumero);//con la variable anterior guardamos los numeros en el nuevo array
-    }
-    numeros[0]++;
+    }*/
 }
+
 alert("Los siguientes numeros son los primeros 25 pares del array: ");
 alert(numerosPares);
-
-
-}
